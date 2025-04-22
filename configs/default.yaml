@@ -1,0 +1,15 @@
+model:
+  latent_dim: 20
+  hidden_dims: [512, 256]
+
+training:
+  batch_size: 128
+  epochs: 20
+  learning_rate: 1e-3
+  beta: 1.0          # KL‑divergence weight
+
+wandb:
+  project: mnist-vae
+
+data:
+  root: ./data
